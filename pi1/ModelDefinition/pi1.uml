@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="b5479413-ef8f-43d9-bfda-26d0b3ac367f"
   name="pi1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -17,28 +17,160 @@
         name="StandardProfileL3" />
     </packageHasProfileInstances>
   </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="425a4bd1-a107-4768-be31-2b2d3fbce540"
+        name="Продвец"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="06044ce2-4663-416d-9547-8fe9c0eb2a1c">
+            <useCaseMoniker
+              Id="c58c7c04-607a-4fa1-83b9-4183204d83da"
+              LastKnownName="Ввести новый заказ"
+              LastKnownLocation="pi1.uml" />
+          </dependency>
+          <dependency
+            Id="68131847-2ddb-48e0-b8aa-7ebd8427f6b1">
+            <useCaseMoniker
+              Id="e56ed409-2fb4-4def-9653-265568eeb5a9"
+              LastKnownName="Изменить существующий заказ"
+              LastKnownLocation="pi1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c58c7c04-607a-4fa1-83b9-4183204d83da"
+        name="Ввести новый заказ"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="7b89ed2e-0951-479d-bce5-82c72aa321fe">
+            <actorMoniker
+              Id="f56002d2-f63d-4e56-b047-9c89d7aa5ec7"
+              LastKnownName="Бухгалтерская система"
+              LastKnownLocation="pi1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e56ed409-2fb4-4def-9653-265568eeb5a9"
+        name="Изменить существующий заказ"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="f56002d2-f63d-4e56-b047-9c89d7aa5ec7"
+        name="Бухгалтерская система"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="d14b6517-8bcf-4c61-83f9-2de7a393a6be"
+        name="Управляющий магазином"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="78d23a50-792c-46c0-9c00-b54c2f5dc7a0">
+            <useCaseMoniker
+              Id="f8644499-3908-4f5c-93a9-10b1a8c15f27"
+              LastKnownName="Напечатать инвентарную опись"
+              LastKnownLocation="pi1.uml" />
+          </dependency>
+          <dependency
+            Id="fd1f089f-fdc0-46bd-9531-a7804b1fc7dd">
+            <useCaseMoniker
+              Id="9f37db20-443e-46c0-9d98-ffe6c9d6276d"
+              LastKnownName="Обновить инвентраную опись"
+              LastKnownLocation="pi1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f8644499-3908-4f5c-93a9-10b1a8c15f27"
+        name="Напечатать инвентарную опись"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9f37db20-443e-46c0-9d98-ffe6c9d6276d"
+        name="Обновить инвентраную опись"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="cd75ba6c-34e8-449e-a8fe-12ab21e1d354"
+        name="Клерк в магизине"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="836a2d60-4a7c-4059-a302-aa7086d40436">
+            <useCaseMoniker
+              Id="cf233ccb-3994-4669-a552-340a9068f423"
+              LastKnownName="Оформить заказ"
+              LastKnownLocation="pi1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cf233ccb-3994-4669-a552-340a9068f423"
+        name="Оформить заказ"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="8ba28fb1-ba19-4dfb-9d11-bcc92e403f74"
+        name="Отклонить заказ"
+        isAbstract="true"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="c6153977-fa35-4eea-90ab-ddce2b71838f">
+            <useCaseMoniker
+              Id="cf233ccb-3994-4669-a552-340a9068f423"
+              LastKnownName="Оформить заказ"
+              LastKnownLocation="pi1.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
     name="Integer"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
     name="Boolean"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
     name="String"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
   <primitiveType
     Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
     name="UnlimitedNatural"
     isAbstract="false"
-    isTemplate="false"
     isLeaf="false" />
 </modelStoreModel>

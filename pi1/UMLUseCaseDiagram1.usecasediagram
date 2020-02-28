@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="6a0da686-e218-4d48-bf40-e214cba2f253" name="UMLUseCaseDiagram1" linkedPackageId="665eb5dc-6b46-451a-8909-ebb7dd596069" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="e6e58c00-6570-49e4-8289-32f395685650">
+      <profileInstance Id="f10ab047-dc1f-48a3-8b49-32dcff204a23" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4b60bd56-7720-465b-9e20-2994d65dcf90">
+      <profileInstance Id="52ac580f-6a98-4e00-b752-51a2cc862d70" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="86ff4232-8adf-4ca9-95d1-cf1d66a06249" name="Продвец" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="425a4bd1-a107-4768-be31-2b2d3fbce540" />
+        <suppliersInternal>
+          <dependency Id="7cd5f545-ab05-4b0e-93d1-6eb3924ab493">
+            <useCaseMoniker Id="78ee68fc-1e46-4848-a2c1-710af12d9734" LastKnownName="Ввести новый заказ" />
+            <elementDefinition Id="06044ce2-4663-416d-9547-8fe9c0eb2a1c" />
+          </dependency>
+          <dependency Id="538330e1-0aaf-4a43-8c10-6997fddb9454">
+            <useCaseMoniker Id="b019ed8e-83e3-4e60-af24-043c25b90110" LastKnownName="Изменить существующий заказ" />
+            <elementDefinition Id="68131847-2ddb-48e0-b8aa-7ebd8427f6b1" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="78ee68fc-1e46-4848-a2c1-710af12d9734" name="Ввести новый заказ" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c58c7c04-607a-4fa1-83b9-4183204d83da" />
+        <suppliersInternal>
+          <dependency Id="527123b4-d1aa-48f9-bb4b-944d7f6a96ed">
+            <actorMoniker Id="81fe05cb-842f-4782-8919-752a4839290f" LastKnownName="Бухгалтерская система" />
+            <elementDefinition Id="7b89ed2e-0951-479d-bce5-82c72aa321fe" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b019ed8e-83e3-4e60-af24-043c25b90110" name="Изменить существующий заказ" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e56ed409-2fb4-4def-9653-265568eeb5a9" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="81fe05cb-842f-4782-8919-752a4839290f" name="Бухгалтерская система" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f56002d2-f63d-4e56-b047-9c89d7aa5ec7" />
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="581a8bbb-b25a-49bc-898f-f094ca5648a4" name="Управляющий магазином" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d14b6517-8bcf-4c61-83f9-2de7a393a6be" />
+        <suppliersInternal>
+          <dependency Id="8f1a444a-c1ef-449f-a71c-122142561d10">
+            <useCaseMoniker Id="aaa4dda6-1e8b-43ca-b7cc-e99e31efdb43" LastKnownName="Напечатать инвентарную опись" />
+            <elementDefinition Id="78d23a50-792c-46c0-9c00-b54c2f5dc7a0" />
+          </dependency>
+          <dependency Id="1d3f9aa7-d5a4-446e-a7aa-0f5d66681c9d">
+            <useCaseMoniker Id="7b72808a-cc26-4113-a8bd-d73594f9200b" LastKnownName="Обновить инвентраную опись" />
+            <elementDefinition Id="fd1f089f-fdc0-46bd-9531-a7804b1fc7dd" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="aaa4dda6-1e8b-43ca-b7cc-e99e31efdb43" name="Напечатать инвентарную опись" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8644499-3908-4f5c-93a9-10b1a8c15f27" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7b72808a-cc26-4113-a8bd-d73594f9200b" name="Обновить инвентраную опись" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9f37db20-443e-46c0-9d98-ffe6c9d6276d" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="213da5e3-d0f6-455a-9c3d-64130362297b" name="Клерк в магизине" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cd75ba6c-34e8-449e-a8fe-12ab21e1d354" />
+        <suppliersInternal>
+          <dependency Id="d0f473e8-9c71-4f17-9057-939b7a97d82a">
+            <useCaseMoniker Id="1b1a424f-84b5-4014-87fd-5f3c670409d9" LastKnownName="Оформить заказ" />
+            <elementDefinition Id="836a2d60-4a7c-4059-a302-aa7086d40436" />
+          </dependency>
+        </suppliersInternal>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1b1a424f-84b5-4014-87fd-5f3c670409d9" name="Оформить заказ" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cf233ccb-3994-4669-a552-340a9068f423" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ea9f0608-d446-47b6-be51-8c03e2b02c2e" name="Отклонить заказ" isAbstract="true" isLeaf="false">
+        <elementDefinition Id="8ba28fb1-ba19-4dfb-9d11-bcc92e403f74" />
+        <extendedCases>
+          <extend Id="1e2c70c2-24ad-44d2-ab4f-6688ffa6cf72">
+            <useCaseMoniker Id="1b1a424f-84b5-4014-87fd-5f3c670409d9" LastKnownName="Оформить заказ" />
+            <elementDefinition Id="c6153977-fa35-4eea-90ab-ddce2b71838f" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="665eb5dc-6b46-451a-8909-ebb7dd596069" name="pi1">
+    <elementDefinition Id="b5479413-ef8f-43d9-bfda-26d0b3ac367f" />
+  </package>
+</useCaseModelRoot>
