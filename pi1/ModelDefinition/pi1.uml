@@ -24,22 +24,86 @@
         name="Продвец"
         isAbstract="false"
         isLeaf="false">
-        <suppliersInternal>
-          <dependency
-            Id="06044ce2-4663-416d-9547-8fe9c0eb2a1c">
+        <targetEnds>
+          <association
+            Id="6d8edae1-eb55-464a-bd0b-d2410d12b2b2"
+            isDerived="false"
+            sourceEndRoleName="Продвец"
+            targetEndRoleName="Ввести новый заказ"
+            isLeaf="false"
+            isAbstract="false">
             <useCaseMoniker
               Id="c58c7c04-607a-4fa1-83b9-4183204d83da"
               LastKnownName="Ввести новый заказ"
               LastKnownLocation="pi1.uml" />
-          </dependency>
-          <dependency
-            Id="68131847-2ddb-48e0-b8aa-7ebd8427f6b1">
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2ed55314-c260-46cb-8ea5-91c927b84317"
+                  name="Продвец"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="57b300f9-5386-4cbe-8743-3cb340a49045"
+                  name="Ввести новый заказ"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1b46fb1f-b2ab-4f62-b003-35e49c2a4b66"
+            isDerived="false"
+            sourceEndRoleName="Продвец"
+            targetEndRoleName="Изменить существующий заказ"
+            isLeaf="false"
+            isAbstract="false">
             <useCaseMoniker
               Id="e56ed409-2fb4-4def-9653-265568eeb5a9"
               LastKnownName="Изменить существующий заказ"
               LastKnownLocation="pi1.uml" />
-          </dependency>
-        </suppliersInternal>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9a2b7ffd-7a84-4f77-8d6a-dd66696938bf"
+                  name="Продвец"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f2a07118-8ae3-46d3-b710-d7098488011b"
+                  name="Изменить существующий заказ"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
       </actor>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -47,17 +111,7 @@
         Id="c58c7c04-607a-4fa1-83b9-4183204d83da"
         name="Ввести новый заказ"
         isAbstract="false"
-        isLeaf="false">
-        <suppliersInternal>
-          <dependency
-            Id="7b89ed2e-0951-479d-bce5-82c72aa321fe">
-            <actorMoniker
-              Id="f56002d2-f63d-4e56-b047-9c89d7aa5ec7"
-              LastKnownName="Бухгалтерская система"
-              LastKnownLocation="pi1.uml" />
-          </dependency>
-        </suppliersInternal>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
@@ -79,22 +133,86 @@
         name="Управляющий магазином"
         isAbstract="false"
         isLeaf="false">
-        <suppliersInternal>
-          <dependency
-            Id="78d23a50-792c-46c0-9c00-b54c2f5dc7a0">
+        <targetEnds>
+          <association
+            Id="dab556d1-2fed-49ba-9551-148f2f3346ad"
+            isDerived="false"
+            sourceEndRoleName="Управляющий магазином"
+            targetEndRoleName="Напечатать инвентарную опись"
+            isLeaf="false"
+            isAbstract="false">
             <useCaseMoniker
               Id="f8644499-3908-4f5c-93a9-10b1a8c15f27"
               LastKnownName="Напечатать инвентарную опись"
               LastKnownLocation="pi1.uml" />
-          </dependency>
-          <dependency
-            Id="fd1f089f-fdc0-46bd-9531-a7804b1fc7dd">
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b35ada68-d628-4c54-bf35-f0aff84b289c"
+                  name="Управляющий магазином"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d99615a1-60f2-4f9c-b32a-47cf3aac4f58"
+                  name="Напечатать инвентарную опись"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7fd8138f-6385-4f99-86a8-02aeb902b2df"
+            isDerived="false"
+            sourceEndRoleName="Управляющий магазином"
+            targetEndRoleName="Обновить инвентраную опись"
+            isLeaf="false"
+            isAbstract="false">
             <useCaseMoniker
               Id="9f37db20-443e-46c0-9d98-ffe6c9d6276d"
               LastKnownName="Обновить инвентраную опись"
               LastKnownLocation="pi1.uml" />
-          </dependency>
-        </suppliersInternal>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a731822a-5ee7-49b4-99d4-781d22dd18aa"
+                  name="Управляющий магазином"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d00d7204-a33e-487f-8e5b-824f34c0fc52"
+                  name="Обновить инвентраную опись"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
       </actor>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -117,15 +235,47 @@
         name="Клерк в магизине"
         isAbstract="false"
         isLeaf="false">
-        <suppliersInternal>
-          <dependency
-            Id="836a2d60-4a7c-4059-a302-aa7086d40436">
+        <targetEnds>
+          <association
+            Id="1a6d405a-7ffc-4f20-b98c-69773e5dbd9f"
+            isDerived="false"
+            sourceEndRoleName="Клерк в магизине"
+            targetEndRoleName="Оформить заказ"
+            isLeaf="false"
+            isAbstract="false">
             <useCaseMoniker
               Id="cf233ccb-3994-4669-a552-340a9068f423"
               LastKnownName="Оформить заказ"
               LastKnownLocation="pi1.uml" />
-          </dependency>
-        </suppliersInternal>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cf0c8395-4281-42ec-a26f-c7a408e26f98"
+                  name="Клерк в магизине"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3735f8fd-c7e0-4da2-b03e-d505e76cb20b"
+                  name="Оформить заказ"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
       </actor>
     </packageHasNamedElement>
     <packageHasNamedElement>
