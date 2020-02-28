@@ -10,7 +10,7 @@
       <useCaseMoniker Id="78ee68fc-1e46-4848-a2c1-710af12d9734" LastKnownName="Ввести новый заказ" />
       <relativeChildShapes />
     </useCaseShape>
-    <useCaseAssociationConnector edgePoints="[(2.25 : 1.56944444444444); (3.62596227924662 : 1.26367504905631)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(2.25 : 1.56944444444444); (3.62596227924662 : 1.26367504905631)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="dbc3644d-ab36-490c-b52d-14c2401c87db" />
       <relativeChildShapes />
       <nodes>
@@ -22,7 +22,7 @@
       <useCaseMoniker Id="b019ed8e-83e3-4e60-af24-043c25b90110" LastKnownName="Изменить существующий заказ" />
       <relativeChildShapes />
     </useCaseShape>
-    <useCaseAssociationConnector edgePoints="[(2.25 : 1.70608108108108); (3.7215690769858 : 2.18334672767107)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(2.25 : 1.70608108108108); (3.7215690769858 : 2.18334672767107)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="5c9d61af-f681-4680-a9e4-30e6c7fabbc6" />
       <relativeChildShapes />
       <nodes>
@@ -34,6 +34,14 @@
       <actorMoniker Id="81fe05cb-842f-4782-8919-752a4839290f" LastKnownName="Бухгалтерская система" />
       <relativeChildShapes />
     </actorShape>
+    <useCaseAssociationConnector edgePoints="[(4.85 : 1.275); (6 : 1.5625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="d921d61b-ac7d-4279-a962-05be2f5bdac1" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="84a85d89-12c3-4992-a92f-ee6b41546b2d" />
+        <actorShapeMoniker Id="2f8041b2-e676-48fa-bfb0-ccf614542554" />
+      </nodes>
+    </useCaseAssociationConnector>
     <actorShape Id="dc1711bd-d75d-4e0f-bdda-3c9b6d57b78b" absoluteBounds="1.75, 3.875, 0.5, 0.5" isReference="false" heightOffset="0">
       <actorMoniker Id="581a8bbb-b25a-49bc-898f-f094ca5648a4" LastKnownName="Управляющий магазином" />
       <relativeChildShapes />
@@ -42,7 +50,7 @@
       <useCaseMoniker Id="aaa4dda6-1e8b-43ca-b7cc-e99e31efdb43" LastKnownName="Напечатать инвентарную опись" />
       <relativeChildShapes />
     </useCaseShape>
-    <useCaseAssociationConnector edgePoints="[(2.25 : 4.10060975609756); (3.76756570991955 : 3.9525545648859)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(2.25 : 4.10060975609756); (3.76756570991955 : 3.9525545648859)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="2faa9cf8-449b-4a1e-80d2-dafb06b266a4" />
       <relativeChildShapes />
       <nodes>
@@ -54,7 +62,7 @@
       <useCaseMoniker Id="7b72808a-cc26-4113-a8bd-d73594f9200b" LastKnownName="Обновить инвентраную опись" />
       <relativeChildShapes />
     </useCaseShape>
-    <useCaseAssociationConnector edgePoints="[(2.25 : 4.22023809523809); (3.9710168461518 : 4.87586356043878)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(2.25 : 4.22023809523809); (3.9710168461518 : 4.87586356043878)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="22d9e78d-7bb1-412a-aff3-29270ce6ac81" />
       <relativeChildShapes />
       <nodes>
@@ -70,7 +78,7 @@
       <useCaseMoniker Id="1b1a424f-84b5-4014-87fd-5f3c670409d9" LastKnownName="Оформить заказ" />
       <relativeChildShapes />
     </useCaseShape>
-    <useCaseAssociationConnector edgePoints="[(2.375 : 7.51162790697674); (4.12640165606336 : 7.59308844911923)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(2.375 : 7.51162790697674); (4.12640165606336 : 7.59308844911923)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="a0dff6db-fc93-4d3c-8fa9-b6fa96798678" />
       <relativeChildShapes />
       <nodes>
@@ -82,7 +90,7 @@
       <useCaseMoniker Id="ea9f0608-d446-47b6-be51-8c03e2b02c2e" LastKnownName="Отклонить заказ" />
       <relativeChildShapes />
     </useCaseShape>
-    <extendConnector edgePoints="[(6.82849081949489 : 7.04900262300146); (5.45239165174024 : 7.4421738137885)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«расширить»">
+    <extendConnector edgePoints="[(6.82849081949489 : 7.04900262300146); (5.45239165174024 : 7.4421738137885)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«расширить»">
       <extendMoniker Id="1e2c70c2-24ad-44d2-ab4f-6688ffa6cf72" />
       <relativeChildShapes />
       <nodes>
@@ -93,7 +101,7 @@
     <artifactShape Id="e6ff6e72-6d69-4d54-b187-b0929f1c29a4" absoluteBounds="5.25, 0.5, 1.5, 0.5" customColor="161, 199, 231">
       <artifactMoniker Id="58f15960-919e-4af9-9192-f01fb1d3321c" LastKnownName="Ввести заказ.txt" />
     </artifactShape>
-    <useCaseDependencyConnector edgePoints="[(5.25 : 0.910714285714286); (4.88088385653242 : 0.989810602171625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+    <useCaseDependencyConnector edgePoints="[(5.25 : 0.910714285714286); (4.88088385653242 : 0.989810602171625)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black">
       <dependencyMoniker Id="600d05ee-d585-4671-887b-7f33a26c6a35" />
       <relativeChildShapes />
       <nodes>

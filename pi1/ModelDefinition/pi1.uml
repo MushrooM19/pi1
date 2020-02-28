@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel"
   dslVersion="1.0.0.0"
   Id="b5479413-ef8f-43d9-bfda-26d0b3ac367f"
   name="pi1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -111,7 +111,49 @@
         Id="c58c7c04-607a-4fa1-83b9-4183204d83da"
         name="Ввести новый заказ"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="1ddfbede-2f99-4432-96b0-7bfcc411e73e"
+            isDerived="false"
+            sourceEndRoleName="Ввести новый заказ"
+            targetEndRoleName="Бухгалтерская система"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="f56002d2-f63d-4e56-b047-9c89d7aa5ec7"
+              LastKnownName="Бухгалтерская система"
+              LastKnownLocation="pi1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="149f5dd8-6de7-40ea-bda9-31963e9e4644"
+                  name="Ввести новый заказ"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c9ececa7-2015-4d0d-842c-a36629c55446"
+                  name="Бухгалтерская система"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
@@ -973,22 +1015,22 @@
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification
-            Id="7eb68e75-0ee0-4b93-bb64-0b34edbd0786"
-            name="MessageOccurrenceSpecification32">
-            <covered>
-              <lifelineMoniker
-                Id="1ffc52ad-748b-4782-838a-b9c7ab6b8325"
-                LastKnownName="Transaction Manager"
-                LastKnownLocation="pi1.uml" />
-            </covered>
-          </messageOccurrenceSpecification>
-          <messageOccurrenceSpecification
             Id="ccd420de-1fdb-437c-b6f3-6c881f3d5b9d"
             name="MessageOccurrenceSpecification31">
             <covered>
               <lifelineMoniker
                 Id="95050c16-d82e-48c8-8513-11c3ce8af0b3"
                 LastKnownName="Order Manager"
+                LastKnownLocation="pi1.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7eb68e75-0ee0-4b93-bb64-0b34edbd0786"
+            name="MessageOccurrenceSpecification32">
+            <covered>
+              <lifelineMoniker
+                Id="1ffc52ad-748b-4782-838a-b9c7ab6b8325"
+                LastKnownName="Transaction Manager"
                 LastKnownLocation="pi1.uml" />
             </covered>
           </messageOccurrenceSpecification>

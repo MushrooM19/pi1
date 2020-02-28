@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="6a0da686-e218-4d48-bf40-e214cba2f253" name="UMLUseCaseDiagram1" linkedPackageId="665eb5dc-6b46-451a-8909-ebb7dd596069" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
-  <profileInstances>
-    <packageHasProfileInstances Id="e6e58c00-6570-49e4-8289-32f395685650">
-      <profileInstance Id="f10ab047-dc1f-48a3-8b49-32dcff204a23" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="4b60bd56-7720-465b-9e20-2994d65dcf90">
-      <profileInstance Id="52ac580f-6a98-4e00-b752-51a2cc862d70" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="6a0da686-e218-4d48-bf40-e214cba2f253" name="UMLUseCaseDiagram1" linkedPackageId="665eb5dc-6b46-451a-8909-ebb7dd596069" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="86ff4232-8adf-4ca9-95d1-cf1d66a06249" name="Продвец" isAbstract="false" isLeaf="false">
@@ -57,6 +43,24 @@
     <useCaseModelRootHasTypes>
       <useCase Id="78ee68fc-1e46-4848-a2c1-710af12d9734" name="Ввести новый заказ" isAbstract="false" isLeaf="false">
         <elementDefinition Id="c58c7c04-607a-4fa1-83b9-4183204d83da" />
+        <targetEnds>
+          <association Id="d921d61b-ac7d-4279-a962-05be2f5bdac1" isDerived="false" sourceEndRoleName="Ввести новый заказ" targetEndRoleName="Бухгалтерская система" isLeaf="false" isAbstract="false">
+            <actorMoniker Id="81fe05cb-842f-4782-8919-752a4839290f" LastKnownName="Бухгалтерская система" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="73ef38eb-b7f2-419e-8a53-13cc5f604bf6" name="Ввести новый заказ" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="149f5dd8-6de7-40ea-bda9-31963e9e4644" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6b041dec-8191-4b39-9f96-42feaa018055" name="Бухгалтерская система" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c9ececa7-2015-4d0d-842c-a36629c55446" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1ddfbede-2f99-4432-96b0-7bfcc411e73e" />
+          </association>
+        </targetEnds>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
@@ -171,5 +175,19 @@
   </packagedElements>
   <package Id="665eb5dc-6b46-451a-8909-ebb7dd596069" name="pi1">
     <elementDefinition Id="b5479413-ef8f-43d9-bfda-26d0b3ac367f" />
+    <profileInstances>
+      <packageHasProfileInstances Id="e6e58c00-6570-49e4-8289-32f395685650">
+        <profileInstance Id="f10ab047-dc1f-48a3-8b49-32dcff204a23" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4b60bd56-7720-465b-9e20-2994d65dcf90">
+        <profileInstance Id="52ac580f-6a98-4e00-b752-51a2cc862d70" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>
