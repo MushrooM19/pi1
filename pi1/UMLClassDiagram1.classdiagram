@@ -1,1 +1,87 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="51dcdcc6-653e-4b67-9ceb-e27ede2efabf" name="UMLClassDiagram1" linkedPackageId="3777cf47-bfdc-419b-97f4-1a250b09d9a8" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="96a5fd53-a048-4530-87a1-5bd5d3decb62">
+      <profileInstance Id="93f3c750-6e27-460c-84c2-216011a5769b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2db16fa7-d6a2-47a0-885a-bf31fa9a31ff">
+      <profileInstance Id="da2204e7-b172-4aa1-9f9e-955212cf71a9" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="eae84a33-6650-4e4f-88cb-3c3e26eaf558" name="OrderOptions" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="126275da-d5c0-4902-909d-179cade9a040" />
+        <ownedOperationsInternal>
+          <operation Id="34c880c6-7549-4312-bddb-20d980a16338" name="Create" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="89894c36-417b-4ccc-b873-36d18beb2af4" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="50496aac-a9b3-436b-9904-dd3c8f0ccc3c" name="OrderMgr" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e860faac-6486-405d-9d87-fe5852ea871b" />
+        <ownedOperationsInternal>
+          <operation Id="2aa4fb0e-17fc-4919-b41d-48e71509d297" name="SaveOrder" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fc5a0378-9323-4271-98a2-cbab2b0724ec" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2360f421-5745-4264-995a-c3864ada71e8" name="OrderDetail" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="61d7682a-6bd7-40b6-9041-f8f8d6da0909" />
+        <ownedOperationsInternal>
+          <operation Id="e73093dc-4288-43fb-9085-3f14158eec90" name="Open" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cf0ba376-5a7a-4670-9663-b2cd2fa0277c" />
+          </operation>
+          <operation Id="36d58c9a-ee28-4dab-aeee-b38d35a534fc" name="SubmitInfo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6eb93244-1e6b-4b31-8a9e-4eb6af0c6e03" />
+          </operation>
+          <operation Id="48d95be1-967e-4390-996e-8124e50b7cbb" name="Save" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0a02ca6f-3733-41df-b4b0-f2fba598f5b3" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="dd9aa46a-5120-4ebc-8e8f-951e70cc5349" name="Order" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e6f7f45a-8073-4aa8-a251-f66e8d6cd6f8" />
+        <ownedOperationsInternal>
+          <operation Id="e24871d5-ab02-441d-97ee-82cf243e2f16" name="Create" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0ff27041-eaf7-4a04-8c71-4626e9b84685" />
+          </operation>
+          <operation Id="f7f6531a-e74e-44f7-881e-cba479617110" name="SetInfo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6e4ccdcb-e817-4f9b-b460-a2c502f30f32" />
+          </operation>
+          <operation Id="caaa4c41-d390-45bd-bb59-f0f55dca3083" name="GetInfo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="edac6d40-f49a-4372-b55f-13a2356ea3ce" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e115a6d3-5dc1-4010-886f-dd9b152b5efe" name="TransacionMgr" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c71630a9-959b-432d-a356-ca29afc80367" />
+        <ownedOperationsInternal>
+          <operation Id="e22ea2c5-7756-4b28-a6b7-bbaa29322c71" name="SaveOrder" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fc91f6fe-7190-43a8-96e7-c167567639e3" />
+          </operation>
+          <operation Id="3b917b20-b0e2-46d8-8804-28545a89ccbf" name="Commit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4eaaec30-84a0-461d-b6fc-cf640cbf3b80" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="3777cf47-bfdc-419b-97f4-1a250b09d9a8" name="pi1">
+    <elementDefinition Id="b5479413-ef8f-43d9-bfda-26d0b3ac367f" />
+  </package>
+</logicalClassDesignerModel>
