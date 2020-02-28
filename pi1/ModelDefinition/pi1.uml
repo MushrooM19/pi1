@@ -302,6 +302,32 @@
         </extendedCases>
       </useCase>
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="b3c6f996-5a5e-410f-b32f-af89ad4969bf"
+        name="Ввести заказ.txt"
+        isAbstract="false"
+        isLeaf="false"
+        fileName="pi1\Ввести заказ.txt" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="caff4fe4-99f4-4f7d-bb4e-061362301e0b"
+        name="Ввести заказ.txt"
+        isAbstract="false"
+        isLeaf="false"
+        fileName="pi1\Ввести заказ.txt">
+        <suppliersInternal>
+          <dependency
+            Id="17fc70b0-e77e-4cc3-97fa-11558729f6a4">
+            <useCaseMoniker
+              Id="c58c7c04-607a-4fa1-83b9-4183204d83da"
+              LastKnownName="Ввести новый заказ"
+              LastKnownLocation="pi1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </artifact>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

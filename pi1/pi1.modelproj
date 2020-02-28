@@ -29,6 +29,9 @@
       <SubType>Content</SubType>
       <DependentUpon>UMLUseCaseDiagram1.usecasediagram</DependentUpon>
     </Content>
+    <Content Include="Ввести заказ.txt">
+      <SubType>Content</SubType>
+    </Content>
     <Folder Include="ModelDefinition\" />
     <Content Include="ModelDefinition\pi1.uml">
       <SubType>Content</SubType>

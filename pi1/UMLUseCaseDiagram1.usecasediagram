@@ -157,6 +157,17 @@
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="58f15960-919e-4af9-9192-f01fb1d3321c" name="Ввести заказ.txt" isAbstract="false" isLeaf="false" fileName="pi1\Ввести заказ.txt">
+        <elementDefinition Id="caff4fe4-99f4-4f7d-bb4e-061362301e0b" />
+        <suppliersInternal>
+          <dependency Id="600d05ee-d585-4671-887b-7f33a26c6a35">
+            <useCaseMoniker Id="78ee68fc-1e46-4848-a2c1-710af12d9734" LastKnownName="Ввести новый заказ" />
+            <elementDefinition Id="17fc70b0-e77e-4cc3-97fa-11558729f6a4" />
+          </dependency>
+        </suppliersInternal>
+      </artifact>
+    </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="665eb5dc-6b46-451a-8909-ebb7dd596069" name="pi1">
     <elementDefinition Id="b5479413-ef8f-43d9-bfda-26d0b3ac367f" />

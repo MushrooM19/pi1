@@ -90,5 +90,16 @@
         <useCaseShapeMoniker Id="6bf37c53-be60-4d23-afff-3a4957885aa2" />
       </nodes>
     </extendConnector>
+    <artifactShape Id="e6ff6e72-6d69-4d54-b187-b0929f1c29a4" absoluteBounds="5.25, 0.5, 1.5, 0.5" customColor="161, 199, 231">
+      <artifactMoniker Id="58f15960-919e-4af9-9192-f01fb1d3321c" LastKnownName="Ввести заказ.txt" />
+    </artifactShape>
+    <useCaseDependencyConnector edgePoints="[(5.25 : 0.910714285714286); (4.88088385653242 : 0.989810602171625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="600d05ee-d585-4671-887b-7f33a26c6a35" />
+      <relativeChildShapes />
+      <nodes>
+        <artifactShapeMoniker Id="e6ff6e72-6d69-4d54-b187-b0929f1c29a4" />
+        <useCaseShapeMoniker Id="84a85d89-12c3-4992-a92f-ee6b41546b2d" />
+      </nodes>
+    </useCaseDependencyConnector>
   </nestedChildShapes>
 </useCaseDiagram>
