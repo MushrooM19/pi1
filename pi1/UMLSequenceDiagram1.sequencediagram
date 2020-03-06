@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="d70e9e6e-cb43-484d-81c7-6c012d7da600" name="Sequence1" linkedPackageId="502126f5-56a3-4ac8-a4d4-9e8d4cc193b2" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
+<SequenceDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" dslVersion="1.0.0.0" Id="d70e9e6e-cb43-484d-81c7-6c012d7da600" name="Sequence1" linkedPackageId="502126f5-56a3-4ac8-a4d4-9e8d4cc193b2" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner">
   <packagedElements>
     <packageHasNamedElement>
       <interaction Id="8ba20538-7054-46d0-9df3-87a4a26d1b63" name="Sequence1" collapseFragmentsFlag="false" isActiveClass="false" isAbstract="false" isLeaf="false" isReentrant="false">
@@ -812,6 +812,9 @@
           </lifeline>
           <lifeline Id="21575233-4955-46e7-9637-471aae3136cb" name="Order Detail From" isActor="false" lifelineDisplayName="Order Detail From">
             <elementDefinition Id="bbb484fe-6529-459c-890f-d814fa734971" />
+            <represents>
+              <propertyMoniker Id="221acb45-1993-40a4-8425-510819bf45f2" />
+            </represents>
             <topLevelOccurrences>
               <executionOccurrenceSpecificationMoniker Id="2c2ae4f9-06c3-4cfb-8eea-0923fe01ed4a" LastKnownName="ExecutionOccurrenceSpecification9" />
               <executionOccurrenceSpecificationMoniker Id="1c59e2e2-4d76-4eae-a803-1cd7cd99f367" LastKnownName="ExecutionOccurrenceSpecification10" />
@@ -849,6 +852,9 @@
           </lifeline>
           <lifeline Id="90ce9653-3286-49b4-ae63-f895c7a4175f" name="Small Cabinet" isActor="false" lifelineDisplayName="Small Cabinet">
             <elementDefinition Id="b38e2140-2127-472f-915b-04435000a06a" />
+            <represents>
+              <propertyMoniker Id="dfa76fca-d1cb-4c03-bf41-f44cbf983673" />
+            </represents>
             <topLevelOccurrences>
               <executionOccurrenceSpecificationMoniker Id="c02d1a55-ccc3-4dde-b95f-03c7badbf2b7" LastKnownName="ExecutionOccurrenceSpecification23" />
               <executionOccurrenceSpecificationMoniker Id="99cef4ba-0dd3-4d01-ae41-bbdde282667e" LastKnownName="ExecutionOccurrenceSpecification24" />
@@ -860,6 +866,9 @@
           </lifeline>
           <lifeline Id="1499c2cb-a038-4405-9079-70ba9cfbaa8e" name="Large Cabinet" isActor="false" lifelineDisplayName="Large Cabinet">
             <elementDefinition Id="256ef4b1-1081-49fe-bc9b-51d72f51fe6d" />
+            <represents>
+              <propertyMoniker Id="4e652391-b98f-4834-ae3f-ecb19ad8aeed" />
+            </represents>
             <topLevelOccurrences>
               <executionOccurrenceSpecificationMoniker Id="3aebbc90-cfbf-4570-8429-ad79ed5dde5d" LastKnownName="ExecutionOccurrenceSpecification27" />
               <executionOccurrenceSpecificationMoniker Id="a62e65f5-c41f-4935-8731-f0ea714abafc" LastKnownName="ExecutionOccurrenceSpecification28" />
@@ -1036,6 +1045,24 @@
               <referencedTypeMoniker Id="132f94f4-3893-45fe-897e-0ce467e029f2" LastKnownName="Продвец" />
             </type_NamedElement>
           </property>
+          <property Id="221acb45-1993-40a4-8425-510819bf45f2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f2c79df6-28bc-4504-b35c-0392c023124a" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="a0c0db05-aab6-4d23-aabd-8ea12939593e" LastKnownName="Order Detail From" />
+            </type_NamedElement>
+          </property>
+          <property Id="dfa76fca-d1cb-4c03-bf41-f44cbf983673" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f1c8cdb2-0078-49e2-aa8e-9a393151c563" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="2229a381-f58c-491f-9935-7f2fa403e297" LastKnownName="Small Cabinet" />
+            </type_NamedElement>
+          </property>
+          <property Id="4e652391-b98f-4834-ae3f-ecb19ad8aeed" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="202371ce-49fa-4d08-8602-d6ae73b449dc" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="df5f2838-cc4c-42b9-80f3-0dea4af71e68" LastKnownName="Large Cabinet" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </interaction>
     </packageHasNamedElement>
@@ -1203,6 +1230,21 @@
       <executionEvent Id="62f7229a-7ef2-44e3-ad8f-dd83d9c4320e" name="ExecutionEvent">
         <elementDefinition Id="d8a50e99-bd07-48b7-906a-42e382d807c2" />
       </executionEvent>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="a0c0db05-aab6-4d23-aabd-8ea12939593e" name="Order Detail From" isAbstract="false" isLeaf="false" cachedFullName="Order Detail From">
+        <elementDefinition Id="428031bb-817a-4d4f-84e4-94d70f37a03b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="2229a381-f58c-491f-9935-7f2fa403e297" name="Small Cabinet" isAbstract="false" isLeaf="false" cachedFullName="Small Cabinet">
+        <elementDefinition Id="65c57e42-e3d0-481b-b99c-df20713f4e7b" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="df5f2838-cc4c-42b9-80f3-0dea4af71e68" name="Large Cabinet" isAbstract="false" isLeaf="false" cachedFullName="Large Cabinet">
+        <elementDefinition Id="1d2e4881-ea08-4c0b-86d2-6ed26ba4ef51" />
+      </referencedType>
     </packageHasNamedElement>
   </packagedElements>
   <package Id="502126f5-56a3-4ac8-a4d4-9e8d4cc193b2" name="pi1">
