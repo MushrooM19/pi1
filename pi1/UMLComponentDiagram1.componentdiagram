@@ -14,6 +14,124 @@
       <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
     </packageHasProfileInstances>
   </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="532b8eb8-4082-483a-b574-93e82b5d5c02" name="OrderClientExe" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2aacc6d5-ef39-42bf-a6b0-594e16a7ae0a" />
+        <suppliersInternal>
+          <dependency Id="b6d6b6f5-2133-4fb6-835e-e9adbc1402f1">
+            <componentMoniker Id="4f331a9e-d69e-456b-bdb1-bd6bd50d8826" LastKnownName="OrderOptions" />
+            <elementDefinition Id="d4a4aa5d-43ad-494c-9441-f5e0198d73ce" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="4f331a9e-d69e-456b-bdb1-bd6bd50d8826" name="OrderOptions" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="4b791cbf-1fc0-435c-9f74-1acc0a3b0a11" name="implementationClass" profile="StandardProfileL2">
+            <elementDefinition Id="2b4814d2-2897-4c4e-97e3-2f440ef65fe7" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="6306fb4b-6336-4be7-892e-c08738092d6e" />
+        <suppliersInternal>
+          <dependency Id="442c73f2-f591-4377-abb7-f97f8dc3afcf">
+            <componentMoniker Id="0912abbe-5e62-4350-bbb8-4c5a4299b7dc" LastKnownName="OrderDetail" />
+            <elementDefinition Id="479794f3-6c42-4e36-b79e-909c8c5ea232" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="0912abbe-5e62-4350-bbb8-4c5a4299b7dc" name="OrderDetail" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="95511768-7ddb-4d1e-a863-03f081b52022" name="implementationClass" profile="StandardProfileL2">
+            <elementDefinition Id="49a28dc0-ec68-4f4d-86c3-b1daebe03586" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="883aa3d7-e2b5-4e39-98af-719c42fca37c" />
+        <suppliersInternal>
+          <dependency Id="5bbef776-0e2f-4ae4-a42e-ba3a718a4628">
+            <componentMoniker Id="99d4793c-a666-4534-ae24-9488d198ab73" LastKnownName="OrderMgr" />
+            <elementDefinition Id="81c860cc-af7c-4e5c-81ee-9d971c6a2552" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="99d4793c-a666-4534-ae24-9488d198ab73" name="OrderMgr" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="2c4b2aef-bf6b-4cd3-b816-588ef1a34964" name="implementationClass" profile="StandardProfileL2">
+            <elementDefinition Id="5c5bf515-5a58-4b6e-88f1-49d08e25918f" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="45d7e968-c5e9-4458-99f1-5be5607da150" />
+        <suppliersInternal>
+          <dependency Id="0c49db63-2936-4c81-85be-9d176fe595cd">
+            <componentMoniker Id="7ac348f1-40b7-4036-a12a-4d9db7cd55c0" LastKnownName="Order" />
+            <elementDefinition Id="d307029a-57e1-462f-9cab-68d49fe8d7a4" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="4bd4a159-2e4c-4c91-825e-8701dbf09dbc" name="OrderServerExe" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="64301cdc-657f-4dbd-841f-5d1e75bd3636" />
+        <suppliersInternal>
+          <dependency Id="2416d0ab-081c-432f-9d69-96984f408361">
+            <componentMoniker Id="99d4793c-a666-4534-ae24-9488d198ab73" LastKnownName="OrderMgr" />
+            <elementDefinition Id="485a7d19-e5c5-42e9-acdc-56f5f3b88dd3" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="7ac348f1-40b7-4036-a12a-4d9db7cd55c0" name="Order" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="9000b5e0-4959-4464-b2cf-26ba85a7c767" name="implementationClass" profile="StandardProfileL2">
+            <elementDefinition Id="c46bf479-2cef-4ba5-b6cc-15904ee2d721" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="e2542a26-c685-4f2a-b1fa-c9adf4597a84" />
+        <suppliersInternal>
+          <dependency Id="053418ed-9276-46dd-9301-d24969867021">
+            <componentMoniker Id="840af8a6-1f46-42a5-a804-1f46cdc51725" LastKnownName="OrderItem" />
+            <elementDefinition Id="94a6a466-bb37-4524-9a53-d0c588491ffd" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="840af8a6-1f46-42a5-a804-1f46cdc51725" name="OrderItem" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="9f4135fb-0bdf-40cb-8cda-bff965a0ce02" name="implementationClass" profile="StandardProfileL2">
+            <elementDefinition Id="ddaf8559-b7e9-443f-a0ef-7d311eeaf040" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="2ebf35b5-1eb6-4891-a4ec-6c06d6467ca8" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="729a49e8-ec1b-454c-8202-f8a28d9b6611" name="TransactionMgr" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="09c759a2-d269-43ab-8eee-dad57550680c" name="implementationClass" profile="StandardProfileL2">
+            <elementDefinition Id="afaa390f-b623-4266-a769-d7aa2e86e6ef" />
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="784bc382-2d2e-4845-8440-b6d796da043f" />
+        <suppliersInternal>
+          <dependency Id="975e6cf3-cd1d-4b19-8a02-aaf56460f0b2">
+            <componentMoniker Id="7ac348f1-40b7-4036-a12a-4d9db7cd55c0" LastKnownName="Order" />
+            <elementDefinition Id="cf4723ff-7529-43ac-b119-64a0aff579d3" />
+          </dependency>
+          <dependency Id="feda910b-e341-4144-a072-649e0bbb0ea9">
+            <componentMoniker Id="840af8a6-1f46-42a5-a804-1f46cdc51725" LastKnownName="OrderItem" />
+            <elementDefinition Id="af398aa1-2796-4b6b-98a0-9bb736d1e72c" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
   <package Id="cc6f6afa-313d-4056-b986-c535f61bf51f" name="pi1">
     <elementDefinition Id="b5479413-ef8f-43d9-bfda-26d0b3ac367f" />
   </package>

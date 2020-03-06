@@ -2820,6 +2820,184 @@
         isLeaf="false"
         isActiveClass="false" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="2aacc6d5-ef39-42bf-a6b0-594e16a7ae0a"
+        name="OrderClientExe"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="d4a4aa5d-43ad-494c-9441-f5e0198d73ce">
+            <componentMoniker
+              Id="6306fb4b-6336-4be7-892e-c08738092d6e"
+              LastKnownName="OrderOptions"
+              LastKnownLocation="pi1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="6306fb4b-6336-4be7-892e-c08738092d6e"
+        name="OrderOptions"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="2b4814d2-2897-4c4e-97e3-2f440ef65fe7"
+            name="implementationClass"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="479794f3-6c42-4e36-b79e-909c8c5ea232">
+            <componentMoniker
+              Id="883aa3d7-e2b5-4e39-98af-719c42fca37c"
+              LastKnownName="OrderDetail"
+              LastKnownLocation="pi1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="883aa3d7-e2b5-4e39-98af-719c42fca37c"
+        name="OrderDetail"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="49a28dc0-ec68-4f4d-86c3-b1daebe03586"
+            name="implementationClass"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="81c860cc-af7c-4e5c-81ee-9d971c6a2552">
+            <componentMoniker
+              Id="45d7e968-c5e9-4458-99f1-5be5607da150"
+              LastKnownName="OrderMgr"
+              LastKnownLocation="pi1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="45d7e968-c5e9-4458-99f1-5be5607da150"
+        name="OrderMgr"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5c5bf515-5a58-4b6e-88f1-49d08e25918f"
+            name="implementationClass"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="d307029a-57e1-462f-9cab-68d49fe8d7a4">
+            <componentMoniker
+              Id="e2542a26-c685-4f2a-b1fa-c9adf4597a84"
+              LastKnownName="Order"
+              LastKnownLocation="pi1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="64301cdc-657f-4dbd-841f-5d1e75bd3636"
+        name="OrderServerExe"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="485a7d19-e5c5-42e9-acdc-56f5f3b88dd3">
+            <componentMoniker
+              Id="45d7e968-c5e9-4458-99f1-5be5607da150"
+              LastKnownName="OrderMgr"
+              LastKnownLocation="pi1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="e2542a26-c685-4f2a-b1fa-c9adf4597a84"
+        name="Order"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="c46bf479-2cef-4ba5-b6cc-15904ee2d721"
+            name="implementationClass"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="94a6a466-bb37-4524-9a53-d0c588491ffd">
+            <componentMoniker
+              Id="2ebf35b5-1eb6-4891-a4ec-6c06d6467ca8"
+              LastKnownName="OrderItem"
+              LastKnownLocation="pi1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="2ebf35b5-1eb6-4891-a4ec-6c06d6467ca8"
+        name="OrderItem"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ddaf8559-b7e9-443f-a0ef-7d311eeaf040"
+            name="implementationClass"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="784bc382-2d2e-4845-8440-b6d796da043f"
+        name="TransactionMgr"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="afaa390f-b623-4266-a769-d7aa2e86e6ef"
+            name="implementationClass"
+            profile="StandardProfileL2" />
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <dependency
+            Id="cf4723ff-7529-43ac-b119-64a0aff579d3">
+            <componentMoniker
+              Id="e2542a26-c685-4f2a-b1fa-c9adf4597a84"
+              LastKnownName="Order"
+              LastKnownLocation="pi1.uml" />
+          </dependency>
+          <dependency
+            Id="af398aa1-2796-4b6b-98a0-9bb736d1e72c">
+            <componentMoniker
+              Id="2ebf35b5-1eb6-4891-a4ec-6c06d6467ca8"
+              LastKnownName="OrderItem"
+              LastKnownLocation="pi1.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
