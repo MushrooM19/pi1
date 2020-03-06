@@ -3,6 +3,24 @@
   dslVersion="1.0.0.0"
   Id="b5479413-ef8f-43d9-bfda-26d0b3ac367f"
   name="pi1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="61ae0816-e779-4a7a-991b-b4c74e6fa343">
+      <body>Выполнить заказ</body>
+    </comment>
+    <comment
+      Id="23118616-b6ec-4f5b-b0cd-9ad24f0c1d6a">
+      <body>Отменить заказ</body>
+    </comment>
+    <comment
+      Id="9f68ba8a-e936-43d1-9de6-ad611bad8b27">
+      <body>Добавить к заказу новую позицию[Не осталось не заполненных позиций]</body>
+    </comment>
+    <comment
+      Id="2d0aba9a-ace6-423d-b795-8360d0dcacbc">
+      <body>Добавить к заказу новую позицию[Остаются незаполненные позиции]</body>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -2693,11 +2711,104 @@
           <initialNode
             Id="40e5cfb2-678f-45b9-a144-630cc8c39b13"
             name="Initial1"
-            isLeaf="false" />
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="3deae6bb-33d1-49cc-aeed-41898d581a15"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="5724d1af-6dab-4458-9a69-7b32e3d194f7"
+                  LastKnownName="Инициализация&#xD;&#xA;-------------------&#xD;&#xA;entry/ Создать дату заказа&#xD;&#xA;do/ Сохранить информацию&#xD;&#xA;do/ Добавить к заказу новые позиции"
+                  LastKnownLocation="pi1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
           <activityFinalNode
             Id="b2cc03b5-f0e9-4c83-bab5-89364305aece"
             name="ActivityFinal1"
             isLeaf="false" />
+          <opaqueAction
+            Id="c87275ee-e56b-4313-b11c-d3246429e910"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4a58556a-6e1c-47df-88f3-d055d85843db"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="bb598f9d-cf6c-422f-8ff8-5868b887749a"
+                  LastKnownName="Отменен&#xD;&#xA;---------------------&#xD;&#xA;exit/ Сохранить дату отмены"
+                  LastKnownLocation="pi1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="5724d1af-6dab-4458-9a69-7b32e3d194f7"
+            name="Инициализация&#xD;&#xA;-------------------&#xD;&#xA;entry/ Создать дату заказа&#xD;&#xA;do/ Сохранить информацию&#xD;&#xA;do/ Добавить к заказу новые позиции"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b8ccc5ad-8fef-49fa-92f5-82aec799e5c9"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1ed14f23-2009-48e0-8c64-d8550f6322e0"
+                  LastKnownName="Выполнение заказа приостановленно"
+                  LastKnownLocation="pi1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="1ed14f23-2009-48e0-8c64-d8550f6322e0"
+            name="Выполнение заказа приостановленно"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="877d2ff6-f9be-4310-8f15-18569a18b4a6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="1ed14f23-2009-48e0-8c64-d8550f6322e0"
+                  LastKnownName="Выполнение заказа приостановленно"
+                  LastKnownLocation="pi1.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="f20ceff0-a685-4c76-8347-62a536f347f1"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e7064fa0-c037-4a69-bfbc-bec5dbb601fe"
+                  LastKnownName="Выполнен&#xD;&#xA;--------------------&#xD;&#xA;do/ Выписать счет"
+                  LastKnownLocation="pi1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="bb598f9d-cf6c-422f-8ff8-5868b887749a"
+            name="Отменен&#xD;&#xA;---------------------&#xD;&#xA;exit/ Сохранить дату отмены"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="daddb5aa-62d7-48c2-bbca-44ceb52a2681"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="b2cc03b5-f0e9-4c83-bab5-89364305aece"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="pi1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="e7064fa0-c037-4a69-bfbc-bec5dbb601fe"
+            name="Выполнен&#xD;&#xA;--------------------&#xD;&#xA;do/ Выписать счет"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8fc1678e-5dd4-4963-9533-e01a269635cd"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="b2cc03b5-f0e9-4c83-bab5-89364305aece"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="pi1.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
         </nodes>
       </activity>
     </packageHasNamedElement>

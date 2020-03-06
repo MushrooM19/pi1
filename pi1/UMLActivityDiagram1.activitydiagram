@@ -1,5 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm11="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="769ba817-d535-4b71-8816-6d3bd07169e1" name="Activity1" linkedPackageId="1b38715e-104a-41fd-a11f-d3fa0b99b072" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="60222bd5-d029-4c68-b33e-09cbdb382341">
+      <elementDefinition Id="61ae0816-e779-4a7a-991b-b4c74e6fa343" />
+      <body>Выполнить заказ</body>
+    </comment>
+    <comment Id="9d6b5b94-4bf8-45d0-8951-289205937976">
+      <elementDefinition Id="23118616-b6ec-4f5b-b0cd-9ad24f0c1d6a" />
+      <body>Отменить заказ</body>
+    </comment>
+    <comment Id="fdb1d3b0-5fb0-4b06-9f90-ddf9668953b6">
+      <elementDefinition Id="9f68ba8a-e936-43d1-9de6-ad611bad8b27" />
+      <body>Добавить к заказу новую позицию[Не осталось не заполненных позиций]</body>
+    </comment>
+    <comment Id="f76a4ef8-e6d2-4bcf-8726-4a0c4dbc5c3a">
+      <elementDefinition Id="2d0aba9a-ace6-423d-b795-8360d0dcacbc" />
+      <body>Добавить к заказу новую позицию[Остаются незаполненные позиции]</body>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances Id="f73a16d6-807c-4ea5-a2ad-eb550bde7625">
       <profileInstance Id="e775668f-db1e-4d62-9c42-22f6ebe39c8d" name="StandardProfileL2">
@@ -21,10 +39,65 @@
         <nodes>
           <initialNode Id="d4126623-880f-441f-9645-9560379364da" name="Initial1" isLeaf="false">
             <elementDefinition Id="40e5cfb2-678f-45b9-a144-630cc8c39b13" />
+            <flowNodeTargets>
+              <controlFlow Id="dea4755b-a904-495c-96b0-09fa0198774a" isLeaf="false">
+                <opaqueActionMoniker Id="29f4b46a-db87-4c3c-b7f2-57fa4c685073" LastKnownName="Инициализация&#xD;&#xA;-------------------&#xD;&#xA;entry/ Создать дату заказа&#xD;&#xA;do/ Сохранить информацию&#xD;&#xA;do/ Добавить к заказу новые позиции" />
+                <elementDefinition Id="3deae6bb-33d1-49cc-aeed-41898d581a15" />
+              </controlFlow>
+            </flowNodeTargets>
           </initialNode>
           <activityFinalNode Id="8f051980-de01-450e-ab30-85bbb457c14a" name="ActivityFinal1" isLeaf="false">
             <elementDefinition Id="b2cc03b5-f0e9-4c83-bab5-89364305aece" />
           </activityFinalNode>
+          <opaqueAction Id="57b61f41-027d-4f8e-baaf-684d5d278444" isLeaf="false">
+            <elementDefinition Id="c87275ee-e56b-4313-b11c-d3246429e910" />
+            <flowNodeTargets>
+              <controlFlow Id="5427c7f2-2eeb-4ef7-9caf-633d18b3edcb" isLeaf="false">
+                <opaqueActionMoniker Id="1277d59f-9715-4803-ae5c-54fe34b2ad73" LastKnownName="Отменен&#xD;&#xA;---------------------&#xD;&#xA;exit/ Сохранить дату отмены" />
+                <elementDefinition Id="4a58556a-6e1c-47df-88f3-d055d85843db" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="29f4b46a-db87-4c3c-b7f2-57fa4c685073" name="Инициализация&#xD;&#xA;-------------------&#xD;&#xA;entry/ Создать дату заказа&#xD;&#xA;do/ Сохранить информацию&#xD;&#xA;do/ Добавить к заказу новые позиции" isLeaf="false">
+            <elementDefinition Id="5724d1af-6dab-4458-9a69-7b32e3d194f7" />
+            <flowNodeTargets>
+              <controlFlow Id="c6afa0f1-65d7-42de-9e24-492a1583ddc7" isLeaf="false">
+                <opaqueActionMoniker Id="a64264f7-0412-492a-bd1c-6772af6ee409" LastKnownName="Выполнение заказа приостановленно" />
+                <elementDefinition Id="b8ccc5ad-8fef-49fa-92f5-82aec799e5c9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="a64264f7-0412-492a-bd1c-6772af6ee409" name="Выполнение заказа приостановленно" isLeaf="false">
+            <elementDefinition Id="1ed14f23-2009-48e0-8c64-d8550f6322e0" />
+            <flowNodeTargets>
+              <controlFlow Id="9d144bf2-4df0-45c4-a134-d8b819198d4d" isLeaf="false">
+                <opaqueActionMoniker Id="a64264f7-0412-492a-bd1c-6772af6ee409" LastKnownName="Выполнение заказа приостановленно" />
+                <elementDefinition Id="877d2ff6-f9be-4310-8f15-18569a18b4a6" />
+              </controlFlow>
+              <controlFlow Id="8a81b6a5-3c6d-4d33-9bc8-cd09d084b6b3" isLeaf="false">
+                <opaqueActionMoniker Id="d716b398-ab80-4301-bee8-be1e76b5a452" LastKnownName="Выполнен&#xD;&#xA;--------------------&#xD;&#xA;do/ Выписать счет" />
+                <elementDefinition Id="f20ceff0-a685-4c76-8347-62a536f347f1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1277d59f-9715-4803-ae5c-54fe34b2ad73" name="Отменен&#xD;&#xA;---------------------&#xD;&#xA;exit/ Сохранить дату отмены" isLeaf="false">
+            <elementDefinition Id="bb598f9d-cf6c-422f-8ff8-5868b887749a" />
+            <flowNodeTargets>
+              <controlFlow Id="bb3152d8-d919-43b6-8abf-b4e18a000ac5" isLeaf="false">
+                <activityFinalNodeMoniker Id="8f051980-de01-450e-ab30-85bbb457c14a" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="daddb5aa-62d7-48c2-bbca-44ceb52a2681" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d716b398-ab80-4301-bee8-be1e76b5a452" name="Выполнен&#xD;&#xA;--------------------&#xD;&#xA;do/ Выписать счет" isLeaf="false">
+            <elementDefinition Id="e7064fa0-c037-4a69-bfbc-bec5dbb601fe" />
+            <flowNodeTargets>
+              <controlFlow Id="6b6b8edd-bf6c-42e1-ae69-634d667d31c9" isLeaf="false">
+                <activityFinalNodeMoniker Id="8f051980-de01-450e-ab30-85bbb457c14a" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="8fc1678e-5dd4-4963-9533-e01a269635cd" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
         </nodes>
       </activity>
     </activityRootModelHasActivity>
