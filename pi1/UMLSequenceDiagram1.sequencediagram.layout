@@ -154,14 +154,14 @@
       </nodes>
     </asyncMessageConnector>
     <lifelineShape Id="ad314397-1e5b-432f-8836-a7520de37db2" absoluteBounds="8.7755212783813477, 1, 0.15, 15.516899888063882" visible="true" visualStyleMode="Modified">
-      <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="Small Cabinet" />
+      <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="OrderItem" />
       <relativeChildShapes>
-        <umlLifelineHeadShape Id="88f9671e-c4b0-42a6-9f4e-57e4606ae1c4" absoluteBounds="8.330328525304795, 0.6, 1.0403855061531067, 0.4" customColor="White" visualStyleMode="Modified">
-          <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="Small Cabinet" />
+        <umlLifelineHeadShape Id="88f9671e-c4b0-42a6-9f4e-57e4606ae1c4" absoluteBounds="8.3505212783813469, 0.6, 1, 0.4" customColor="White" visualStyleMode="Modified">
+          <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="OrderItem" />
           <relativeChildShapes />
         </umlLifelineHeadShape>
         <lifelineHoverShape Id="24d036e1-0ae6-4593-a126-7b751e64004c" absoluteBounds="8.7755212783813477, 1, 0, 15.5">
-          <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="Small Cabinet" />
+          <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="OrderItem" />
         </lifelineHoverShape>
         <umlExecutionSpecificationShape Id="2433435e-5eb7-4a28-8258-50b000885d55" absoluteBounds="8.7755212783813477, 7.4974383780249862, 0.15, 0.55000000000000071" customColor="184, 204, 215" visualStyleMode="Modified">
           <behaviorExecutionSpecificationMoniker Id="354bf9fc-ffcf-499d-9c89-d58cbb882572" LastKnownName="BehaviorExecutionSpecification12" />

@@ -351,7 +351,7 @@
           <behaviorExecutionSpecification Id="354bf9fc-ffcf-499d-9c89-d58cbb882572" name="BehaviorExecutionSpecification12">
             <elementDefinition Id="14a8eec3-af06-4f91-b96a-1025540ca108" />
             <coveredLifelines>
-              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="Small Cabinet" />
+              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="OrderItem" />
             </coveredLifelines>
             <finish>
               <executionOccurrenceSpecificationMoniker Id="99cef4ba-0dd3-4d01-ae41-bbdde282667e" LastKnownName="ExecutionOccurrenceSpecification24" />
@@ -371,7 +371,7 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="Small Cabinet" />
+              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="OrderItem" />
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification Id="6646273a-418c-46d7-a1e1-242363ed0773" name="MessageOccurrenceSpecification27">
@@ -383,7 +383,7 @@
           <messageOccurrenceSpecification Id="7708c2dd-7e51-4793-beb8-d0c4b58e2265" name="MessageOccurrenceSpecification28">
             <elementDefinition Id="73805875-bbb4-41d7-b869-34ba319b6267" />
             <covered>
-              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="Small Cabinet" />
+              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="OrderItem" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="99cef4ba-0dd3-4d01-ae41-bbdde282667e" name="ExecutionOccurrenceSpecification24">
@@ -394,13 +394,13 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="Small Cabinet" />
+              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="OrderItem" />
             </covered>
           </executionOccurrenceSpecification>
           <behaviorExecutionSpecification Id="c0d24dbc-6c9e-4518-8614-a3af59578b15" name="BehaviorExecutionSpecification13">
             <elementDefinition Id="38d35c3c-3204-4370-94ba-45455cbd38c7" />
             <coveredLifelines>
-              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="Small Cabinet" />
+              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="OrderItem" />
             </coveredLifelines>
             <finish>
               <executionOccurrenceSpecificationMoniker Id="33deb6f5-b2dd-44c5-ba90-24f75a295a7e" LastKnownName="ExecutionOccurrenceSpecification26" />
@@ -420,13 +420,13 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="Small Cabinet" />
+              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="OrderItem" />
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification Id="ba8a9787-6986-48c9-bd1b-eaba9f68cc6f" name="MessageOccurrenceSpecification30">
             <elementDefinition Id="d45cffd3-e84f-4d1d-a27c-f4dd7b4372ec" />
             <covered>
-              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="Small Cabinet" />
+              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="OrderItem" />
             </covered>
           </messageOccurrenceSpecification>
           <messageOccurrenceSpecification Id="4665f49c-96c0-44ed-8536-eba2d7f20b47" name="MessageOccurrenceSpecification29">
@@ -443,7 +443,7 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="Small Cabinet" />
+              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="OrderItem" />
             </covered>
           </executionOccurrenceSpecification>
           <behaviorExecutionSpecification Id="c1ca69c8-db42-43cd-85dd-1b131470b275" name="BehaviorExecutionSpecification14">
@@ -645,7 +645,7 @@
           <behaviorExecutionSpecification Id="22abc0d1-8ace-46b7-817b-5223260598c7" name="BehaviorExecutionSpecification18">
             <elementDefinition Id="5eff0b54-5648-4e77-855b-3fbc750a1102" />
             <coveredLifelines>
-              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="Small Cabinet" />
+              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="OrderItem" />
             </coveredLifelines>
             <finish>
               <executionOccurrenceSpecificationMoniker Id="4747d696-22b3-4600-8b66-f047b9c7cb20" LastKnownName="ExecutionOccurrenceSpecification36" />
@@ -665,7 +665,7 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="Small Cabinet" />
+              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="OrderItem" />
             </covered>
           </executionOccurrenceSpecification>
           <messageOccurrenceSpecification Id="515ea481-4eac-4021-8824-ea3dd881ef04" name="MessageOccurrenceSpecification39">
@@ -677,7 +677,7 @@
           <messageOccurrenceSpecification Id="00d9774c-40d2-4914-8dc8-13fcd3716764" name="MessageOccurrenceSpecification40">
             <elementDefinition Id="cdd49e49-633b-467b-89cd-5c6265d8bd76" />
             <covered>
-              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="Small Cabinet" />
+              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="OrderItem" />
             </covered>
           </messageOccurrenceSpecification>
           <executionOccurrenceSpecification Id="4747d696-22b3-4600-8b66-f047b9c7cb20" name="ExecutionOccurrenceSpecification36">
@@ -688,7 +688,7 @@
               </executionOccurrenceSpecificationReferencesEvent>
             </event>
             <covered>
-              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="Small Cabinet" />
+              <lifelineMoniker Id="90ce9653-3286-49b4-ae63-f895c7a4175f" LastKnownName="OrderItem" />
             </covered>
           </executionOccurrenceSpecification>
           <behaviorExecutionSpecification Id="952e8533-0e6e-4b60-bffc-5e4b0a6b6a83" name="BehaviorExecutionSpecification19">
@@ -850,7 +850,7 @@
               <executionOccurrenceSpecificationMoniker Id="73b02eba-1f97-4a1a-8c41-1e00822eba0c" LastKnownName="ExecutionOccurrenceSpecification34" />
             </topLevelOccurrences>
           </lifeline>
-          <lifeline Id="90ce9653-3286-49b4-ae63-f895c7a4175f" name="Small Cabinet" isActor="false" lifelineDisplayName="Small Cabinet">
+          <lifeline Id="90ce9653-3286-49b4-ae63-f895c7a4175f" name="OrderItem" isActor="false" lifelineDisplayName="OrderItem">
             <elementDefinition Id="b38e2140-2127-472f-915b-04435000a06a" />
             <represents>
               <propertyMoniker Id="dfa76fca-d1cb-4c03-bf41-f44cbf983673" />
@@ -956,7 +956,7 @@
               <messageOccurrenceSpecificationMoniker Id="ea876e4c-9c32-4979-a061-558af60dd393" LastKnownName="MessageOccurrenceSpecification26" />
             </receiveEvent>
           </message>
-          <message Id="6d3b9772-ff50-495b-80ef-7b9feb14a54f" name="8:Create()" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+          <message Id="6d3b9772-ff50-495b-80ef-7b9feb14a54f" name="8:Create()" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false" signatureText="+ 8:Create() : Boolean">
             <elementDefinition Id="f897afab-4152-4628-b5d7-796ab74bb6b6" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="6646273a-418c-46d7-a1e1-242363ed0773" LastKnownName="MessageOccurrenceSpecification27" />
@@ -965,7 +965,7 @@
               <messageOccurrenceSpecificationMoniker Id="7708c2dd-7e51-4793-beb8-d0c4b58e2265" LastKnownName="MessageOccurrenceSpecification28" />
             </receiveEvent>
           </message>
-          <message Id="5f2bd691-9b70-408e-a8e1-8153e2756280" name="9:SetInfo()" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+          <message Id="5f2bd691-9b70-408e-a8e1-8153e2756280" name="9:SetInfo()" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false" signatureText="+ 9:SetInfo(OrderNum : Integer, Customer : String, OrderDate : Date, FillDate : Date) : Boolean">
             <elementDefinition Id="03411199-e222-4130-9479-0411f5d0ba35" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="4665f49c-96c0-44ed-8536-eba2d7f20b47" LastKnownName="MessageOccurrenceSpecification29" />
@@ -1010,7 +1010,7 @@
               <messageOccurrenceSpecificationMoniker Id="5d0991c3-29e6-4079-a68f-d2c5e734c54b" LastKnownName="MessageOccurrenceSpecification38" />
             </receiveEvent>
           </message>
-          <message Id="a3dc6e40-8e56-4aad-aa40-e683b8370426" name="14:GetInfo()" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false">
+          <message Id="a3dc6e40-8e56-4aad-aa40-e683b8370426" name="14:GetInfo()" messageKind="Complete" messageSort="AsynchCall" createSelfMessage="false" signatureText="+ 14:GetInfo() : String">
             <elementDefinition Id="8d985a26-2489-4839-be4a-e03f4f8f3523" />
             <sendEvent>
               <messageOccurrenceSpecificationMoniker Id="515ea481-4eac-4021-8824-ea3dd881ef04" LastKnownName="MessageOccurrenceSpecification39" />
@@ -1054,7 +1054,7 @@
           <property Id="dfa76fca-d1cb-4c03-bf41-f44cbf983673" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="f1c8cdb2-0078-49e2-aa8e-9a393151c563" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="2229a381-f58c-491f-9935-7f2fa403e297" LastKnownName="Small Cabinet" />
+              <referencedTypeMoniker Id="53c95e67-d4c6-4af6-a315-ec73c07feb67" LastKnownName="OrderItem" />
             </type_NamedElement>
           </property>
           <property Id="4e652391-b98f-4834-ae3f-ecb19ad8aeed" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -1244,6 +1244,11 @@
     <packageHasNamedElement>
       <referencedType Id="df5f2838-cc4c-42b9-80f3-0dea4af71e68" name="Large Cabinet" isAbstract="false" isLeaf="false" cachedFullName="Large Cabinet">
         <elementDefinition Id="1d2e4881-ea08-4c0b-86d2-6ed26ba4ef51" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="53c95e67-d4c6-4af6-a315-ec73c07feb67" name="OrderItem" isAbstract="false" isLeaf="false" cachedFullName="pi1::OrderItem">
+        <elementDefinition Id="7e02178b-17b1-4278-a42f-144de8cfdbc3" />
       </referencedType>
     </packageHasNamedElement>
   </packagedElements>

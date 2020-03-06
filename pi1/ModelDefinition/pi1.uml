@@ -2679,6 +2679,13 @@
         Id="49227f2e-6cfe-47ba-be5e-06c438fb2610"
         name="Date" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f78fa291-cc1e-48c2-aa14-4f1556f104db"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
